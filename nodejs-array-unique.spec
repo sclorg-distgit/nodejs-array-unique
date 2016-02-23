@@ -7,7 +7,7 @@
 Summary:       Return an array free of duplicate values
 Name:          %{?scl_prefix}nodejs-%{npm_name}
 Version:       0.2.1
-Release:       2%{?dist}
+Release:       3%{?dist}
 License:       MIT
 URL:           https://github.com/jonschlinkert/array-unique
 Source0:       http://registry.npmjs.org/%{npm_name}/-/%{npm_name}-%{version}.tgz
@@ -40,6 +40,9 @@ cp -pr index.js package.json %{buildroot}%{nodejs_sitelib}/%{npm_name}
 %{nodejs_sitelib}/%{npm_name}
 
 %changelog
+* Sun Feb 14 2016 Zuzana Svetlikova <zsvetlik@redhat.com> - 0.2.1-3
+- rebuilt
+
 * Mon Jan 11 2016 Tomas Hrcka <thrcka@redhat.com> - 0.2.1-2
 - Enable scl macros
 
